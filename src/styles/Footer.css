@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "Lora-Regular";
+    src: url("../../public//font/Lora/Lora-Regular.ttf") format("truetype");
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 30px 50px;
+    background-color: aliceblue;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: row;
+    font-family: "Lora-Regular";
+    font-size: 15px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: row;
+    font-family: "Lora-Regular";
+    font-size: 15px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.github-link {
+    display: flex;
+    align-items: center;
+}
+
+.github-base {
+    cursor: pointer;
+    transition: transform 0.15s ease;
+}
+
+.github-base:hover {
+    transform: scale(1.06);
+}
