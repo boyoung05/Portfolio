@@ -5,6 +5,7 @@ import Home from "../pages/Home/Home";
 import Project from "../pages/Project/Project";
 import About from "../pages/About/About";
 import Footer from "./Footer";
+import Header from "./Header";
 import '../App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/project" element={<Project/>} />
         <Route path="/about" element={<About/>} />
       </Routes>
+      <Header />
       <Footer />
     </Router>
   );
