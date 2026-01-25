@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "GmarketSans-Medium";
+    src: url("../../public//font/GmarketSansTTF/GmarketSansTTFMedium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "LibreBodoni-Bold";
+    src: url("../../public//font/Libre_Bodoni/LibreBodoni-Bold.ttf") format("truetype");
+}
+
+.banner-container {
+    display: flex;
+    flex-direction: row;
+    padding: 100px 150px;
+    justify-content: space-between;
+    background-color: #191D25;
+}
+
+.banner-left {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.banner-line {
+    color: #fefefe;
+
+}
+
+.banner-name {
+    font-family: "LibreBodoni-Bold";
+    font-size: 600%;
+    color: #fefefe;
+}
+
+.banner-info {
+    font-family: "GmarketSans-Medium";
+    font-size: 120%;
+    color: #fefefe;
+}
+
+.banner-right {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.slick-dots {
+    bottom: 80px;
+}
+
+.slick-dots li button:before {
+    color: white;
+    opacity: 0.75;
+    font-size: 8px;
+}
+
+.slick-dots li.slick-active button:before{
+    color: white;
+    opacity: 1.5;
+}
+
+.banner-right .slick-slider {
+    width: 100%;
+    max-width: 500px;
+}
+
+.banner-right .slick-list {
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.banner-right .slick-track,
+.banner-right .slick-slide,
+.banner-right .slick-slide > div{
+    height: 100%;
+}
+
+.banner-right .slick-slide {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+}
+
+/* dots를 '슬라이더 폭 기준'으로 정확히 중앙정렬 */
+.banner-right .slick-dots {
+    bottom: 15px;
+}
+
+/* 원본 이미지 */
+.banner-right .slide-img{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}

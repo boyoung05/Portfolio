@@ -21,8 +21,8 @@ header {
     z-index: 1;
     font-family: "Lora-Regular";
     font-size: 20px;
-    background-color: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(8px);
     
 }
@@ -31,7 +31,11 @@ header {
     font-family: "LibreBodoni-Bold";
     font-size: 28px;
     text-decoration: none;
-    color: #343434;
+    color: #f2f2f2;
+}
+
+.header-title a:hover {
+    color: #343434
 }
 
 .nav-menu {
@@ -45,12 +49,9 @@ header {
     font-family: "Lora-Regular";
     font-size: 20px;
     text-decoration: none;
-    color: #909090;
+    color: #f2f2f2;
 }
 
 .nav-menu a:hover {
     color: #343434;
 }
-
-
-
