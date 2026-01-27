@@ -107,6 +107,21 @@
     font-size: 35px;
     margin: 0 0 10px 0;
     color: #343434;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.mainactivity-container h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 215px;
+    height: 2px;
+    background: #002870;
+    border-radius: 999px;
+    opacity: 0.9;
 }
 
 .mainactivity-sub-container {
