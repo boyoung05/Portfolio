@@ -19,15 +19,15 @@ const Banner = () => {
     }
 
     const images = [
-        `${process.env.PUBLIC_URL}/img/fire.jpg`,
-        `${process.env.PUBLIC_URL}/img/plane.jpg`,
-        `${process.env.PUBLIC_URL}/img/rocket.jpg`,
-        `${process.env.PUBLIC_URL}/img/moon.jpg`,
-        `${process.env.PUBLIC_URL}/img/sight.jpg`,
-        `${process.env.PUBLIC_URL}/img/sight2.jpg`,
-        `${process.env.PUBLIC_URL}/img/snow.jpg`,
-        `${process.env.PUBLIC_URL}/img/lion1.jpg`,
-        `${process.env.PUBLIC_URL}/img/lion3.jpg`,
+        `${process.env.PUBLIC_URL}/img/Banner/fire.jpg`,
+        `${process.env.PUBLIC_URL}/img/Banner/plane.jpg`,
+        `${process.env.PUBLIC_URL}/img/Banner/rocket.jpg`,
+        `${process.env.PUBLIC_URL}/img/Banner/moon.jpg`,
+        `${process.env.PUBLIC_URL}/img/Banner/sight.jpg`,
+        `${process.env.PUBLIC_URL}/img/Banner/sight2.jpg`,
+        `${process.env.PUBLIC_URL}/img/Banner/snow.jpg`,
+        `${process.env.PUBLIC_URL}/img/Banner/lion1.jpg`,
+        `${process.env.PUBLIC_URL}/img/Banner/lion3.jpg`,
     ];
 
     return(

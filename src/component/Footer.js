@@ -3,8 +3,8 @@ import "../styles/Footer.css";
 
 const Footer = () => {
 
-    const base = `${process.env.PUBLIC_URL}/img/github_gray.png`;
-    const hover = `${process.env.PUBLIC_URL}/img/github_black.png`;
+    const base = `${process.env.PUBLIC_URL}/img/Footer/github_gray.png`;
+    const hover = `${process.env.PUBLIC_URL}/img/Footer/github_black.png`;
     return (
         <div className="footer-container">
             <div className="footer-left">

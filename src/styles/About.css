@@ -1,0 +1,165 @@
+@font-face {
+    font-family: "Lora-Regular";
+    src: url("../../public//font/Lora/Lora-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "LibreBodoni-Bold";
+    src: url("../../public//font/Libre_Bodoni/LibreBodoni-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "GmarketSans-Medium";
+    src: url("../../public//font/GmarketSansTTF/GmarketSansTTFMedium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "GmarketSans-Bold";
+    src: url("../../public//font/GmarketSansTTF/GmarketSansTTFBold.ttf") format("truetype");
+}
+
+.Info-container {
+    display: flex;
+    flex-direction: row;
+    padding: 100px 200px;
+    justify-content: space-between;
+    background-color: #191D25;
+    align-items: center;
+}
+
+.Info-leftWrap {
+    position: relative;
+    width: 33%;
+    padding-left: 50px;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 900px;
+}
+
+.Info-leftWrap::after {
+    content: "";
+    position: absolute;
+    left: 72%;
+    bottom: -22px;
+    transform: translateX(-70%);
+
+    width: 88%;
+    height: 18%;        
+    border-radius: 50%;
+
+    background: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 255, 0.7) 0%,
+    rgba(255, 255, 255, 0.22) 45%,
+    rgba(255, 255, 255, 0.08) 65%,
+    rgba(255, 255, 255, 0) 82%
+    );
+
+    filter: blur(18px);
+    opacity: 1;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.Info-logo3d {
+    position: relative;
+    width: min(360px, 100%);
+    aspect-ratio: 1 / 1;
+    display: grid;
+    place-items: center;
+
+    transform-style: preserve-3d;
+    animation: logoFlip3D 5.5s linear infinite;
+    will-change: transform;
+    z-index: 1;
+}
+
+.Info-logoFace {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    object-fit: contain;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.Info-logoFront {
+    transform: rotateY(0deg);
+}
+
+.Info-logoBack {
+    transform: rotateY(180deg);
+}
+
+@keyframes logoFlip3D {
+    from  { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+}
+
+.Info-right {
+    position: relative;
+}
+
+.Info-right::after {
+    content: "";
+    position: absolute;
+    left: 75%;
+    bottom: -70px;
+    transform: translateX(-70%);
+
+    width: 120%;
+    height: 23%;        
+    border-radius: 50%;
+
+    background: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0.22) 45%,
+    rgba(255, 255, 255, 0.08) 65%,
+    rgba(255, 255, 255, 0) 82%
+    );
+
+    filter: blur(18px);
+    opacity: 1;
+    z-index: 0;
+    pointer-events: none;
+
+}
+.Info-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+.Info-title {
+    font-family: "LibreBodoni-Bold";
+    font-size: 50px;
+    color: #f2f2f2;
+}
+
+.Info-birth {
+    margin-top: 20px;
+}
+
+.Info-birth,
+.Info-major,
+.Info-play,
+.Info-number,
+.Info-naver,
+.Info-link {
+    font-family: "GmarketSans-Medium";
+    font-size: 20px;
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.Info-link:hover {
+    color: #9e9e9e;
+}

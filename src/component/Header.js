@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../styles/Header.css";
 
@@ -6,10 +6,23 @@ const Header = () => {
     const location = useLocation();
     const currentPage = location.pathname;
 
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const onScroll = () => {
+            setScrolled(window.scrollY > 900);
+        };
+        onScroll();
+        window.addEventListener("scroll", onScroll, { passive: true });
+        return () => window.removeEventListener("scroll", onScroll);
+    }, []);
+
     return (
-        <header>
+        <header className={scrolled ? "header scrolled" : "header"}>
         <div className="header-title">
-            <Link to="/">PORTFOLIO</Link>
+            <Link to="/" className={currentPage === "/" ? "active" : ""}>
+            PORTFOLIO
+            </Link>
         </div>
         <nav className="nav-menu">
             <Link
