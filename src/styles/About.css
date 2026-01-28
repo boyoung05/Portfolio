@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: "Lora-Medium";
+    src: url("../../public//font/Lora/Lora-Medium.ttf") format("truetype");
+}
+
+@font-face {
     font-family: "LibreBodoni-Bold";
     src: url("../../public//font/Libre_Bodoni/LibreBodoni-Bold.ttf") format("truetype");
 }
@@ -257,4 +262,86 @@
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.45);
     border: 1px solid rgba(52, 52, 52, 0.25);
+}
+
+/*Activity & Career*/
+.Activity-container {
+    width: min(1100px, 100%);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 80px 40px;
+}
+
+.Activity-title {
+    font-family: "LibreBodoni-Bold";
+    font-size: 35px;
+    color: #343434;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.Activity-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 280px;
+    height: 2px;
+    background: #002870;
+    border-radius: 999px;
+    opacity: 0.9;
+}
+
+.Activity-entire-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Activity-wrapper {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 230px;
+    padding: 30px 50px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(52, 52, 52, 0.25);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.Activity-line-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Activity-Wrapper-title {
+    font-family: "LibreBodoni-Medium";
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #002870;
+}
+
+.Activity-date {
+    font-family: "LibreBodoni-Regular";
+    font-size: 16px;
+    color: #343434;
+}
+
+.Activity-Wrapper-Role,
+.Activity-Wrapper-content {
+    font-family: "GmarketSans-Medium";
+    font-size: 16px;
+    color: #343434;
+}
+
+.Activity-Wrapper-content {
+
 }
