@@ -125,6 +125,40 @@ const Activity = () => {
                             나만의 쇼핑몰 웹사이트 제작
                         </div>
                     </div>
+                    {/*Adventure Design*/}
+                    <div className="Activity-wrapper">
+                        <div className="Activity-line-one">
+                            <div className="Activity-Wrapper-title">
+                                [Adventure Design]
+                            </div>
+                            <div className="Activity-date">
+                                [2025.09 - 2025.12]
+                            </div>
+                        </div>
+                        <div className="Activity-Wrapper-Role">
+                            [DESIGN]
+                        </div>
+                        <div className="Activity-Wrapper-content">
+                            보행약자를 위한 보행 내비게이션 어플 기획 및 디자인
+                        </div>
+                    </div>
+                    {/*객체지향프로그래밍*/}
+                    <div className="Activity-wrapper">
+                        <div className="Activity-line-one">
+                            <div className="Activity-Wrapper-title">
+                                [Book Exchange Platform]
+                            </div>
+                            <div className="Activity-date">
+                                [2025.10 - 2025.12]
+                            </div>
+                        </div>
+                        <div className="Activity-Wrapper-Role">
+                            [DESIGN]
+                        </div>
+                        <div className="Activity-Wrapper-content">
+                            대학생을 위한 도서 교환 플랫폼 디자인 및 제작
+                        </div>
+                    </div>
                 </div>
         </div>
     )

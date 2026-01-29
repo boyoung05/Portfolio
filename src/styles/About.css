@@ -342,6 +342,79 @@
     color: #343434;
 }
 
-.Activity-Wrapper-content {
+/*Award & Certificate*/
+.Award-container {
+    width: min(1100px, 100%);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 80px 40px;   
+}
 
+.Award-title {
+    font-family: "LibreBodoni-Bold";
+    font-size: 35px;
+    color: #343434;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.Award-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 325px;
+    height: 2px;
+    background: #002870;
+    border-radius: 999px;
+    opacity: 0.9;
+}
+
+.Award-entire-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Award-wrapper {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 230px;
+    padding: 30px 50px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(52, 52, 52, 0.25);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.Award-line-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Award-wrapper-title {
+    font-family: "LibreBodoni-Medium";
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #002870;
+}
+
+.Award-date {
+    font-family: "LibreBodoni-Regular";
+    font-size: 16px;
+    color: #343434;
+}
+
+.Award-content {
+    font-family: "GmarketSans-Medium";
+    font-size: 16px;
+    color: #343434;
 }
