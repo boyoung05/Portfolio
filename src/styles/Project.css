@@ -1,0 +1,205 @@
+@font-face {
+    font-family: "Lora-Regular";
+    src: url("../../public//font/Lora/Lora-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Lora-Medium";
+    src: url("../../public//font/Lora/Lora-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "LibreBodoni-Bold";
+    src: url("../../public//font/Libre_Bodoni/LibreBodoni-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "LibreBodoni-Medium";
+    src: url("../../public//font/Libre_Bodoni/LibreBodoni-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "LibreBodoni-Regular";
+    src: url("../../public//font/Libre_Bodoni/LibreBodoni-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "GmarketSans-Medium";
+    src: url("../../public//font/GmarketSansTTF/GmarketSansTTFMedium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "GmarketSans-Bold";
+    src: url("../../public//font/GmarketSansTTF/GmarketSansTTFBold.ttf") format("truetype");
+}
+
+.Banner-container {
+    display: flex;
+    justify-content: center;
+    padding: 150px 0;
+    background: radial-gradient(circle at top right, #252a35, #191D25);
+    position: relative;
+    overflow: hidden;
+}
+
+.Banner-container::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -300px;
+    width: 2600px;
+    height: 400px;
+
+    background: 
+    radial-gradient(circle at 50% 35%,
+    rgba(0, 212, 255, 0.22) 0%,
+    rgba(0, 140, 255, 0.12) 45%,
+    rgba(0, 0, 0, 0) 85%
+    ),
+    radial-gradient(circle at 45% 55%,
+    rgba(0, 212, 255, 0.14) 0%,
+    rgba(0, 140, 255, 0.08) 55%,
+    rgba(0, 0, 0, 0) 90%
+    );
+
+    filter: blur(60px);
+    transform: translateX(-50%);
+    opacity: 1;
+    pointer-events: none;
+    z-index: 0;
+
+    will-change: transform;
+    transform: translate3d(-50%, 0, 0);
+}
+
+.Banner-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.Banner-visual-area {
+    flex: 0.8;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    min-height: 320px;
+}
+
+.Starfield {
+    position: absolute;
+    inset: -60px -520px -80px -120px;
+    right: -40px;
+    top: -20px;
+
+    background-image:
+    radial-gradient(circle, rgba(255,255,255,0.95) 1px, transparent 2.6px),
+    radial-gradient(circle, rgba(255,255,255,0.70) 1px, transparent 2.8px),
+    radial-gradient(circle, rgba(255,255,255,0.50) 1px, transparent 3px),
+    radial-gradient(circle, rgba(255,255,255,0.35) 1px, transparent 3.2px),
+    radial-gradient(circle, rgba(255,255,255,0.25) 1px, transparent 3.6px),
+    radial-gradient(circle, rgba(255,255,255,0.18) 1px, transparent 4px);
+
+    background-size: 270px 115px, 101px 137px, 149px 113px, 197px 163px, 233px 211px, 281px 257px;
+    background-position: 12px 18px, 47px 91px, 83px 29px, 141px 122px, 19px 160px, 206px 66px;
+
+    opacity: 0.62;
+    filter: blur(0.15px);
+    pointer-events: none;
+    z-index: 1;
+
+    -webkit-mask-image: radial-gradient(
+        circle at 78% 32%, 
+        rgba(0,0,0,1) 0%, 
+        rgba(0,0,0,1) 48%,
+        rgba(0,0,0,0) 88%
+    );
+    mask-image: radial-gradient(
+        circle at 78% 32%,
+        rgba(0,0,0,1) 0%,
+        rgba(0,0,0,1) 48%,
+        rgba(0,0,0,0) 88%
+    );
+
+    animation: twinkle 3.8s ease-in-out infinite;
+
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.48; transform: translateY(6px, 6px, 0); }
+    50%      { opacity: 0.68; transform: translateY(-12px, -10px, 0); }
+}
+
+
+.Banner-text-area {
+    flex: 1;
+    text-align: left; 
+}
+
+.Banner-title {
+    font-family: "LibreBodoni-Bold";
+    font-size: 72px; 
+    color: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+.Banner-subtitle {
+    font-family: "GmarketSans-Medium";
+    font-size: 24px;
+    color: #86dff1; 
+    margin-bottom: 10px;
+}
+
+.Banner-content {
+    font-family: "GmarketSans-Medium";
+    font-size: 16px;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.Banner-tags {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.Banner-tags span {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #f2f2f2;
+}
+
+.Banner-visual-area {
+    flex: 0.8;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Visual-circle {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, #00d4ff 0%, #0055ff 100%);
+    filter: blur(80px);
+    opacity: 0.3;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+.Visual-circle.small {
+    width: 190px;
+    height: 190px;
+    opacity: 0.22;
+    filter: blur(70px);
+
+    position: absolute;
+    right: 60px;
+    top: 140px;
+    z-index: 2;
+}

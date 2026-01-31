@@ -13,7 +13,39 @@
     flex-direction: row;
     padding: 100px 150px;
     justify-content: space-between;
-    background-color: #191D25;
+    background: radial-gradient(circle at top right, #252a35, #191D25);
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-container::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -300px;
+    width: 2600px;
+    height: 400px;
+
+    background: 
+    radial-gradient(circle at 50% 35%,
+    rgba(0, 212, 255, 0.22) 0%,
+    rgba(0, 140, 255, 0.12) 45%,
+    rgba(0, 0, 0, 0) 85%
+    ),
+    radial-gradient(circle at 45% 55%,
+    rgba(0, 212, 255, 0.14) 0%,
+    rgba(0, 140, 255, 0.08) 55%,
+    rgba(0, 0, 0, 0) 90%
+    );
+
+    filter: blur(60px);
+    transform: translateX(-50%);
+    opacity: 1;
+    pointer-events: none;
+    z-index: 0;
+
+    will-change: transform;
+    transform: translate3d(-50%, 0, 0);
 }
 
 .banner-left {

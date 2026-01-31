@@ -38,7 +38,7 @@
     flex-direction: row;
     padding: 100px 200px;
     justify-content: space-between;
-    background-color: #191D25;
+    background: radial-gradient(circle at top right, #252a35, #191D25);
     align-items: center;
 }
 
