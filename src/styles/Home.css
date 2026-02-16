@@ -24,7 +24,7 @@
     margin: 0 auto;
     display: flex;
     gap: 40px;
-    padding: 80px 40px;
+    padding: 150px 40px;
 }
 
 .go-to-project,
@@ -153,14 +153,20 @@
     border-color: #002870;
 }
 
+.mainactivity-wrapper.clickable {
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
 .activity-quick{
     width: 100%;
-    height: 140px;          /* ← 여기만 바꾸면 이미지 높이 통일 */
+    height: 140px;          
     display: block;
     border-radius: 10px;
-    background: #e9edf3;    /* 로딩/빈공간 색 */
-    object-fit: cover;      /* 제각각 크기여도 꽉 채우기 */
+    background: #e9edf3;    
+    object-fit: cover;      
     cursor: pointer;
+    border: 1px solid rgba(0, 85, 255, 0.14);
 }
 
 .wrapper-title {
@@ -176,12 +182,3 @@
     color: #343434;
     line-height: 1.5;
 }
-
-@media (max-width: 900px){
-    .mainactivity-sub-container{
-      flex-direction: column;
-    }
-    .activity-quick{
-      height: 180px;
-    }
-  }

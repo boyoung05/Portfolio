@@ -33,6 +33,15 @@
     src: url("../../public//font/GmarketSansTTF/GmarketSansTTFBold.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "GmarketSans-Regular";
+    src: url("../../public//font/GmarketSansTTF/GmarketSansTTFLight.ttf") format("truetype");
+}
+
+
+
+/*배너*/
+
 .Banner-container {
     display: flex;
     justify-content: center;
@@ -97,12 +106,12 @@
     top: -20px;
 
     background-image:
-    radial-gradient(circle, rgba(255,255,255,0.95) 1px, transparent 2.6px),
-    radial-gradient(circle, rgba(255,255,255,0.70) 1px, transparent 2.8px),
-    radial-gradient(circle, rgba(255,255,255,0.50) 1px, transparent 3px),
-    radial-gradient(circle, rgba(255,255,255,0.35) 1px, transparent 3.2px),
-    radial-gradient(circle, rgba(255,255,255,0.25) 1px, transparent 3.6px),
-    radial-gradient(circle, rgba(255,255,255,0.18) 1px, transparent 4px);
+    radial-gradient(circle, rgba(255,255,255,0.95) 0.5px, transparent 2.6px),
+    radial-gradient(circle, rgba(255,255,255,0.70) 0.5px, transparent 2.8px),
+    radial-gradient(circle, rgba(255,255,255,0.50) 0.5px, transparent 3px),
+    radial-gradient(circle, rgba(255,255,255,0.35) 0.5px, transparent 3.2px),
+    radial-gradient(circle, rgba(255,255,255,0.25) 0.5px, transparent 3.6px),
+    radial-gradient(circle, rgba(255,255,255,0.18) 0.5px, transparent 4px);
 
     background-size: 270px 115px, 101px 137px, 149px 113px, 197px 163px, 233px 211px, 281px 257px;
     background-position: 12px 18px, 47px 91px, 83px 29px, 141px 122px, 19px 160px, 206px 66px;
@@ -130,8 +139,8 @@
 }
 
 @keyframes twinkle {
-    0%, 100% { opacity: 0.48; transform: translateY(6px, 6px, 0); }
-    50%      { opacity: 0.68; transform: translateY(-12px, -10px, 0); }
+    0%, 100% { opacity: 0.48; transform: translate3d(5px, 3px, 0); }
+    50%      { opacity: 0.68; transform: translate3d(8px, 6px, 0); }
 }
 
 
@@ -150,8 +159,23 @@
 .Banner-subtitle {
     font-family: "GmarketSans-Medium";
     font-size: 24px;
-    color: #86dff1; 
     margin-bottom: 10px;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.98) 0%,
+        rgba(255,255,255,0.7) 35%,
+        #002870 65%,
+        rgba(1, 56, 132, 0.95) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent; 
+
+    text-shadow:
+    0 0 12px rgba(0, 212, 255, 0.18),
+    0 0 28px rgba(0, 140, 255, 0.12);
 }
 
 .Banner-content {
@@ -171,6 +195,7 @@
     background: rgba(255, 255, 255, 0.1);
     padding: 5px 15px;
     border-radius: 20px;
+    font-family: "Lora-Regular";
     font-size: 14px;
     color: #f2f2f2;
 }
@@ -202,4 +227,220 @@
     right: 60px;
     top: 140px;
     z-index: 2;
+}
+
+/*2024/2025*/
+.project-page {
+    width: min(1100px, 100%);
+    margin: 0 auto;
+    padding: 150px 0 0 0;
+}
+
+.year-section {
+    margin-bottom: 50px;
+}
+
+.year-title {
+    font-family: "LibreBodoni-Bold";
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.bottom-line {
+    width: 185px;
+    height: 1.5px;
+    border: 0;
+    background: #002870;
+    border-radius: 999px;
+    margin: -20px auto 20px;
+    opacity: 0.9;
+}
+
+.year-slider-wrap {
+    position: relative;
+    padding: 18px 70px;
+}
+
+.year-slider-wrap .slick-list {
+    overflow: hidden;
+    padding: 18px 0;
+}
+
+.slide-item {
+    padding: 0 12px;
+    box-sizing: border-box;
+}
+
+.first-card.clickable {
+    flex: 1;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 450px;
+    padding: 20px 40px 40px 40px;
+    border-radius: 18px;
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.3); 
+    border: 1px solid #d9d9d9;
+
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    transition: transform 0.15s ease, 
+    box-shadow 0.15s ease, 
+    border-color 0.15s ease;
+    transform-origin: center;
+}
+
+.first-card.clickable:hover {
+    transform: scale(1.02);
+    border-color: #002870;
+    box-shadow: none;
+    filter: drop-shadow(0 18px 50px rgba(36, 56, 167, 0.20));
+}
+
+.card-image-wrap {
+    width: 100%;
+    height: 180px;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 18px;
+
+    background: rgba(0, 85, 255, 0.06);
+    border: 1px solid rgba(0, 85, 255, 0.14);
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.18s ease;
+}
+
+.first-card.clickable:hover .card-image {
+    transform: scale(1.03);
+}
+
+.card-date {
+    font-family: "Lora-Regular";
+    font-size: 18px;
+}
+
+.card-title {
+    font-family: "Lora-Regular";
+    font-size: 20px;  
+    color: #002870;
+    margin-bottom: 5px;
+}
+
+.card-content,
+.card-detail {
+    font-family: "GmarketSans-Regular";
+    font-size: 16px;
+    line-height: 1.3;
+    margin-bottom: 5px;
+}
+
+.card-tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    width: auto;
+    color: inherit;
+}
+
+.card-tech-stack span {
+    font-family: "Lora-Regular";
+    font-size: 17px;
+    background-color: #d5e2fc;
+    width: fit-content;
+    border-radius: 800px;
+    padding: 6px 10px;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.card-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: auto;
+    margin-left: auto;
+
+    width: fit-content;
+    cursor: pointer;
+
+    background-color: #d5e2fc;
+    border-radius: 800px;
+    padding: 10px 15px 3px 10px;
+}
+
+.detail-arrow {
+    width: 24px;
+    height: auto;
+    margin-bottom: 7px;
+    transition: transform 0.18s ease;
+}
+
+.card-bottom:hover .detail-arrow {
+    transform: translate(8px);
+}
+
+.card-bottom:hover .card-detail {
+    color: #002870;
+}
+
+
+/* 화살표 커스텀 */
+.project-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-arrow-prev { left: -80px; }
+.project-arrow-next { right: -80px; }
+
+.arrow-img-wrap {
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+
+.arrow-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.15s ease;
+}
+
+.arrow-img-hover { opacity: 0;}
+
+.project-arrow:hover .arrow-img-base { opacity: 0;}
+.project-arrow:hover .arrow-img-hover { opacity: 1;}
+
+/* slick 기본 화살표 아이콘 제거(겹침 방지) */
+.project-arrow::before {
+    display: none;
 }

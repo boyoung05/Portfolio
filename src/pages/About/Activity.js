@@ -10,7 +10,7 @@ const Activity = () => {
                     <div className="Activity-wrapper">
                         <div className="Activity-line-one">
                             <div className="Activity-Wrapper-title">
-                                [SEED CROWD FUNDING]
+                                [CROWD FUNDING]
                             </div>
                             <div className="Activity-date">
                                 [2024.04 - 2024.07]
@@ -21,6 +21,23 @@ const Activity = () => {
                         </div>
                         <div className="Activity-Wrapper-content">
                             크라우드 펀딩
+                        </div>
+                    </div>
+                    {/*2024 ICT 창업 메이커톤*/}
+                    <div className="Activity-wrapper">
+                        <div className="Activity-line-one">
+                            <div className="Activity-Wrapper-title">
+                                [2024 ICT Start-up Maker Tone]
+                            </div>
+                            <div className="Activity-date">
+                                [2024.04.03 - 2024.05.20]
+                            </div>
+                        </div>
+                        <div className="Activity-Wrapper-Role">
+                            [DESIGN]
+                        </div>
+                        <div className="Activity-Wrapper-content">
+                            ICT 창업 메이커톤
                         </div>
                     </div>
                     {/*SEED 동아리 임원진*/}
@@ -40,23 +57,6 @@ const Activity = () => {
                             SEED 동아리 임원진 활동
                         </div>
                     </div>
-                    {/*2024 ICT 창업 메이커톤*/}
-                    <div className="Activity-wrapper">
-                        <div className="Activity-line-one">
-                            <div className="Activity-Wrapper-title">
-                                [2024 ICT 창업 메이커톤]
-                            </div>
-                            <div className="Activity-date">
-                                [2024. - 2024.]
-                            </div>
-                        </div>
-                        <div className="Activity-Wrapper-Role">
-                            [DESIGN]
-                        </div>
-                        <div className="Activity-Wrapper-content">
-                            ICT 창업 메이커톤
-                        </div>
-                    </div>
                     {/*LIKE LION*/}
                     <div className="Activity-wrapper">
                         <div className="Activity-line-one">
@@ -74,31 +74,14 @@ const Activity = () => {
                             교내 창업 동아리 멋쟁이사자처럼 13기 부원 활동
                         </div>
                     </div>
-                    {/*2025 ICT 창업 메이커톤*/}
-                    <div className="Activity-wrapper">
-                        <div className="Activity-line-one">
-                            <div className="Activity-Wrapper-title">
-                                [2025 ICT 창업 메이커톤]
-                            </div>
-                            <div className="Activity-date">
-                                [2025. - 2025.]
-                            </div>
-                        </div>
-                        <div className="Activity-Wrapper-Role">
-                            [DESIGN]
-                        </div>
-                        <div className="Activity-Wrapper-content">
-                            ICT 창업 메이커톤
-                        </div>
-                    </div>
                     {/*해커톤*/}
                     <div className="Activity-wrapper">
                         <div className="Activity-line-one">
                             <div className="Activity-Wrapper-title">
-                                [LIKE LION 해커톤]
+                                [LIKE LION Hackathon]
                             </div>
                             <div className="Activity-date">
-                                [2025.04 - 2025.08]
+                                [2025.04 - 2025.08.26]
                             </div>
                         </div>
                         <div className="Activity-Wrapper-Role">
@@ -108,6 +91,23 @@ const Activity = () => {
                             멋쟁이사자처럼 전국 해커톤 참여
                         </div>
                     </div>
+                    {/*2025 ICT 창업 메이커톤*/}
+                    <div className="Activity-wrapper">
+                        <div className="Activity-line-one">
+                            <div className="Activity-Wrapper-title">
+                                [2025 ICT Start-up Maker Tone]
+                            </div>
+                            <div className="Activity-date">
+                                [2025.09.12 - 2025.11.12]
+                            </div>
+                        </div>
+                        <div className="Activity-Wrapper-Role">
+                            [DESIGN]
+                        </div>
+                        <div className="Activity-Wrapper-content">
+                            ICT 창업 메이커톤
+                        </div>
+                    </div>
                     {/*개인 프로젝트*/}
                     <div className="Activity-wrapper">
                         <div className="Activity-line-one">
@@ -115,7 +115,7 @@ const Activity = () => {
                                 [SAJANG PROJECT]
                             </div>
                             <div className="Activity-date">
-                                [2025.03 - 2025.12]
+                                [2025.03.09 - 2025.11.20]
                             </div>
                         </div>
                         <div className="Activity-Wrapper-Role">
@@ -132,7 +132,7 @@ const Activity = () => {
                                 [Adventure Design]
                             </div>
                             <div className="Activity-date">
-                                [2025.09 - 2025.12]
+                                [2025.09.01 - 2025.12.14]
                             </div>
                         </div>
                         <div className="Activity-Wrapper-Role">
@@ -149,7 +149,7 @@ const Activity = () => {
                                 [Book Exchange Platform]
                             </div>
                             <div className="Activity-date">
-                                [2025.10 - 2025.12]
+                                [2025.10 - 2025.12.15]
                             </div>
                         </div>
                         <div className="Activity-Wrapper-Role">

@@ -10,7 +10,7 @@ const Header = () => {
 
     useEffect(() => {
         const onScroll = () => {
-            setScrolled(window.scrollY > 900);
+            setScrolled(window.scrollY > 400);
         };
         onScroll();
         window.addEventListener("scroll", onScroll, { passive: true });

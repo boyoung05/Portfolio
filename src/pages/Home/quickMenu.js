@@ -16,7 +16,7 @@ const QuickMenu = () => {
                     Projects
                 </div>
                 <div className="menu-project-exp">
-                    대학 생활 동안 진행했던<br></br>다양한 활동들을 확인해보세요.
+                    재학 중 진행했던<br></br>다양한 활동들을 확인해보세요.
                 </div>
                 <div className="menu-project-detail">
                     <p

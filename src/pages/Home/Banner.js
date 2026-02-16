@@ -40,7 +40,7 @@ const Banner = () => {
                     Nam<br></br>Bo Young
                 </div>
                 <div className="banner-info">
-                    한국항공대학교 재학 동안<br></br><br></br>있었던 다양한 활동과 프로젝트를 소개하는 공간입니다.
+                    한국항공대학교 재학 중<br></br><br></br>진행한 활동과 프로젝트를 소개하는 공간입니다.
                 </div>
                 <div className="banner-line">
                     <hr></hr>
