@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../../styles/Home.css";
 
-const QuickMenu = () => {
+const quickMenu = () => {
 
     const navigate = useNavigate();
 
@@ -55,4 +55,4 @@ const QuickMenu = () => {
     )
 }
 
-export default QuickMenu;
+export default quickMenu;
