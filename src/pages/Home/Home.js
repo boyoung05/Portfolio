@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "./Banner";
-import QuickMenu from "./QuickMenu";
+import QuickMenu from "./quickMenu";
 import MainActivity from "./mainActivity";
 
 const Home = () => {
