@@ -17,10 +17,15 @@ const Header = () => {
         return () => window.removeEventListener("scroll", onScroll);
     }, []);
 
+    const isProjectDetail = currentPage.startsWith("/project/");
+
     return (
-        <header className={scrolled ? "header scrolled" : "header"}>
+        <header className={`header ${scrolled ? "scrolled" : ""} ${isProjectDetail ? "detail" : ""}`}>
         <div className="header-title">
-            <Link to="/" className={currentPage === "/" ? "active" : ""}>
+            <Link 
+            to="/" 
+            className={currentPage === "/" ? "active" : ""}
+            >
             PORTFOLIO
             </Link>
         </div>

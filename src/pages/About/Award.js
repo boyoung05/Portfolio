@@ -25,7 +25,7 @@ const Award = () => {
                             [ADsP]
                         </div>
                         <div className="Award-date">
-                            [2026.03]
+                            [2026.02.27]
                         </div>
                     </div>
                     <div className="Award-content">

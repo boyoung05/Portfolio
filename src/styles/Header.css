@@ -83,3 +83,15 @@ header {
 .header.scrolled .nav-menu a.active {
     color: #343434;
 }
+
+.header.detail .header-title a,
+.header.detail .nav-menu a {
+    color: #343434 !important;
+}
+
+.header.detail .header-title a:hover,
+.header.detail .nav-menu a:hover,
+.header.detail .header-title a.active,
+.header.detail .nav-menu a.active {
+    color: #002870 !important;
+}
